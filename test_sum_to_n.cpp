@@ -3,8 +3,11 @@
 using namespace std;
 
 
-int sum_of_integers(int n){
-    return 0;
+int sum_to_n(int n){
+    int total =0;
+    for (int i = 1; i<=n;i++)
+        total+=i;
+    return total ;
 
 
 TEST_CASE("sum_to_n(int n) returns sum of integers from 1 to n") {
