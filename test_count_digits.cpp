@@ -4,8 +4,16 @@ using namespace std;
 
 
 int count_digits(int n){
-    return 0;
+    if(n==0)
+        return 1;
+    int count =0;
+    while(n>1)
+        n/=10;
+        count++;
+        
+    return count;
 
+}
 
 TEST_CASE("count_digits(int n) returns number of decimal digits in n") {
     CHECK(count_digits(7) == 1);
