@@ -4,7 +4,7 @@ using namespace std;
 
 
 int find_largest(int n,int x){
-    return 0;
+    return (n>x)? n:x;
 }
 
 TEST_CASE("find_largest returns the greater of two integers") {
