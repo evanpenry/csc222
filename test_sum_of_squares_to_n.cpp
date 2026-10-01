@@ -5,11 +5,9 @@ using namespace std;
 
 int sum_of_squares_to_n(int n){
     int total = 0;
-    int x=n;
     while(n>0){
-        x*=n;
-        n-=1;
-        total+=x;
+        total+=n* n;
+        n--;
 
 }
     return total;
