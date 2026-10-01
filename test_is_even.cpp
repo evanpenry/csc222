@@ -3,7 +3,7 @@
 using namespace std;
 
 int is_even(int n){
-    return 0;
+    return n % 2 == 0 ? 1:0;
 
 
 }
