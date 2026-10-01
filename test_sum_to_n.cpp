@@ -8,7 +8,7 @@ int sum_to_n(int n){
     for (int i = 1; i<=n;i++)
         total+=i;
     return total ;
-
+}
 
 TEST_CASE("sum_to_n(int n) returns sum of integers from 1 to n") {
     CHECK(sum_to_n(3) == 6);
