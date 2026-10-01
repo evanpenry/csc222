@@ -4,7 +4,8 @@ using namespace std
 
 
 bool is_divisible_by(int n, int d){
-    return 0;
+    if(d==0)return false;
+    return n % d==0;
 
 }
 
