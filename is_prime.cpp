@@ -2,8 +2,9 @@
 #include <doctest.h>
 using namespace std;
 
-int is_prime(int n){
-    return 0;
+bool is_prime(int n){
+    if (n<=1)
+        return false;
 
 }
 TEST_CASE("is_prime(int n) returns true if n is a prime number") {
