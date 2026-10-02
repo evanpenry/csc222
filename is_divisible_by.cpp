@@ -3,10 +3,13 @@
 using namespace std
 
 
-bool is_divisible_by(int n, int d){
-    if(d==0)return false;
-    return n % d==0;
-
+int is_divisible_by(int n, int d){
+    if(n%d==0){
+        return true;
+    }
+    else{
+        return false;
+    }
 }
 
 TEST_CASE("is_divisible_by(int n, int d) returns whether d divides n") {
