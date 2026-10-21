@@ -14,6 +14,12 @@ void swapPointer(int* a, int* b){
     *b = temp;
 }
 
+void swapReference(int& a, int& b){
+    int temp = a;
+    a = b;
+    b = temp;
+}
+
 int main(){
     int x = 10;
     int y = 20;
@@ -21,9 +27,11 @@ int main(){
     cout << "Original: x = " <<x <<", y = " << y << endl;
     swapValue(x,y);
     cout << "After pass by value: x= " << x<<", y = "<<y<<endl;
-    swapPointer(x,y);
+    swapPointer(&x,&y);
 
     cout << "After pass by pointer: x= " << x<<", y = "<<y<<endl;
 
+    swapReference(x,y);
+    cout << "After pass by reference: x= " << x<<", y = "<<y<<endl;
     return 0;
 }
