@@ -9,6 +9,7 @@ int main(){
     
     cout << "Trash outside array: " << trash[4] << endl;
     
+    cout << "Garbage in garbage out: " << trash[4] *2 <<endl;
     return 0;
 
 }
