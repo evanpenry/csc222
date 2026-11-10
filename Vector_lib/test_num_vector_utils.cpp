@@ -10,4 +10,9 @@ TEST_CASE("Testing render_num_vector") {
     string numstr = render_num_vector(nums);
     string expected = "1 3 7";
     CHECK(numstr == expected);
+     vector<int> one_num = {5};
+    CHECK(render_num_vector(one_num) == "5");
+
+    vector<int> no_nums = {};
+    CHECK(render_num_vector(no_nums) == "");
 }
